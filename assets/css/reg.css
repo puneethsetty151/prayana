@@ -1,0 +1,123 @@
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Registration Button */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    max-width: 325px; /* Increased max-width */
+    margin:  auto;
+    padding: 30px; /* Increased padding */
+    min-height: 18px;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    opacity: 0.8; /* Reduced opacity for slight transparency */
+}
+
+.wrapper .h5 {
+    font-size: 15px;
+    color: #ddd;
+}
+
+.wrapper .destination {
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 12px;
+}
+
+.wrapper .destination span {
+    margin-left: 100px;
+}
+
+.wrapper .form-group {
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    margin-bottom: 2px; /* Adjusted margin */
+}
+
+.wrapper .form-group:hover {
+    border-bottom: 1px solid #eee;
+}
+
+.wrapper .form-group .form-control {
+    width: 100%;
+    background: inherit;
+    border: none;
+    box-shadow: none;
+    color: #e9e9e9;
+    font-size: 13px; /* Increased font size for visibility */
+    padding: 8px; /* Increased padding for input */
+}
+
+.wrapper .form-group input::placeholder {
+    font-size: 13px;
+    color: white;
+}
+
+.wrapper .form-group input:focus::placeholder {
+    opacity: 0;
+}
+
+.wrapper .option {
+    color: black;
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.wrapper .option:hover {
+    color: black;
+}
+
+.wrapper .option input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.wrapper .terms {
+    color: #bbb;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.wrapper .terms a {
+    text-decoration: none;
+    color: #eee;
+}
+
+.wrapper .terms a:hover {
+    color: #fff;
+}
+
+
+@media(max-width: 460px) {
+    .wrapper {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    .wrapper .connect::after {
+        left: 38%;
+    }
+}
+
+@media(max-width: 345px) {
+    .wrapper .connect::after {
+        left: 32%;
+    }
+}
